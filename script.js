@@ -18,12 +18,12 @@ const siswa = [
     },
     {
         name: "Gandhi",
-        class: "Backend Core",
+        class: "Dev Ops A",
         score: 90
     },
     {
         name: "Wahyu",
-        class: "Backend Core",
+        class: "Dev Ops B",
         score: 71
     },
     {
@@ -38,17 +38,17 @@ const siswa = [
     },
     {
         name: "farid",
-        class: "Backend Core",
+        class: "Dev Ops B",
         score: 87
     },
     {
         name: "Rizky",
-        class: "Full Stack B",
+        class: "Dev Ops A",
         score: 72
     },
     {
         name: "Putri",
-        class: "Backend Core",
+        class: "Dev Ops B",
         score: 94
     }
 ];
