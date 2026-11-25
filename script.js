@@ -2,54 +2,54 @@
 // mock data siswa
 const siswa = [
     {
-        name: "Andi Saputra",
-        class: "Full Stack A",
-        score: 85
-    },
-    {
-        name: "Budi Santoso",
-        class: "Full Stack A",
-        score: 78
-    },
-    {
-        name: "Citra Lestari",
-        class: "Full Stack B",
-        score: 92
-    },
-    {
-        name: "Dewi Anggraini",
-        class: "Backend Core",
-        score: 88
-    },
-    {
-        name: "Eko Prasetyo",
-        class: "Backend Core",
-        score: 75
-    },
-    {
-        name: "Fina Amelia",
+        name: "Desvanto",
         class: "Full Stack A",
         score: 95
     },
     {
-        name: "Gilang Ramadhan",
+        name: "Budi",
+        class: "Full Stack A",
+        score: 75
+    },
+    {
+        name: "Asep",
         class: "Full Stack B",
+        score: 86
+    },
+    {
+        name: "Gandhi",
+        class: "Backend Core",
+        score: 90
+    },
+    {
+        name: "Wahyu",
+        class: "Backend Core",
+        score: 71
+    },
+    {
+        name: "Amelia",
+        class: "Full Stack A",
         score: 80
     },
     {
-        name: "Hani Fitriani",
-        class: "Backend Core",
-        score: 89
-    },
-    {
-        name: "Irfan Hakim",
+        name: "Farhan",
         class: "Full Stack B",
-        score: 70
+        score: 81
     },
     {
-        name: "Joko Susilo",
+        name: "farid",
         class: "Backend Core",
-        score: 82
+        score: 87
+    },
+    {
+        name: "Rizky",
+        class: "Full Stack B",
+        score: 72
+    },
+    {
+        name: "Putri",
+        class: "Backend Core",
+        score: 94
     }
 ];
 
@@ -93,19 +93,17 @@ function tampilkanSiswa(data) {
 
     }).join("");
 
-    // menggunakan reduce() untuk menghitung total nilai
+    // Menggunakan reduce() untuk menghitung total nilai
     const totalNilai = data.reduce((total, siswa) => {
         return total + siswa.score;
     }, 0);
 
-    // menggunakan reduce() untuk menghitung rata-rata
+    // Menghitung rata-rata
     const rataRata = data.length > 0
         ? (totalNilai / data.length).toFixed(1)
         : "0.0";
 
-    // memperbarui statistik
-    document.getElementById("totalSiswa").textContent = siswa.length;
-    document.getElementById("jumlahTampil").textContent = data.length;
+    // Memperbarui rata-rata nilai
     document.getElementById("rataRata").textContent = rataRata;
 
     // memperbarui footer
