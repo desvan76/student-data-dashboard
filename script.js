@@ -106,9 +106,8 @@ function tampilkanSiswa(data) {
     // memperbarui rata-rata nilai
     document.getElementById("rataRata").textContent = rataRata;
 
-    // memperbarui footer
-    document.getElementById("footerJumlah").textContent = data.length;
-    document.getElementById("footerRataRata").textContent = rataRata;
+    // memperbarui jumlah data
+    document.getElementById("totalSiswa").textContent = data.length;
 
     // jika data tidak ditemukan
     if (data.length === 0) {
