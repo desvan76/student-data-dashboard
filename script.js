@@ -60,10 +60,10 @@ const searchInput = document.getElementById("searchInput");
 // fungsi untuk menampilkan data
 function tampilkanSiswa(data) {
 
-    // Menggunakan map() untuk merender tabel
+    // menggunakan map() untuk merender tabel
     tabelSiswa.innerHTML = data.map((siswa, index) => {
 
-        // Menentukan warna nilai
+        // menentukan warna nilai
         let warna;
 
         if (siswa.score >= 85) {
@@ -93,17 +93,17 @@ function tampilkanSiswa(data) {
 
     }).join("");
 
-    // Menggunakan reduce() untuk menghitung total nilai
+    // menggunakan reduce() untuk menghitung total nilai
     const totalNilai = data.reduce((total, siswa) => {
         return total + siswa.score;
     }, 0);
 
-    // Menghitung rata-rata
+    // menghitung rata-rata
     const rataRata = data.length > 0
         ? (totalNilai / data.length).toFixed(1)
         : "0.0";
 
-    // Memperbarui rata-rata nilai
+    // memperbarui rata-rata nilai
     document.getElementById("rataRata").textContent = rataRata;
 
     // memperbarui footer
