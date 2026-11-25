@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">S</span>
+            <h2>Student<span>Hub</span></h2>
+        </div>
+        <p>Dashboard Akademik</p>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <div>
+                <p class="subtitle">STUDENT MANAGEMENT</p>
+                <h1>Daftar Nilai Siswa</h1>
+                <p class="description">
+                    Kelola dan pantau hasil belajar siswa dengan mudah.
+                </p>
+            </div>
+
+            <div class="date-label">
+                <span>📚</span> Data Akademik
+            </div>
+        </section>
+
+        <!-- statistik -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon purple">👥</div>
+                <div>
+                    <p>Total Siswa</p>
+                    <h2 id="totalSiswa">10</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">🏆</div>
+                <div>
+                    <p>Rata-rata Nilai</p>
+                    <h2 id="rataRata">83.4</h2>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- tabel siswa -->
+        <section class="content-card">
+
+            <div class="table-header">
+                <div>
+                    <h2>Data Siswa</h2>
+                    <p>Informasi nama, kelas, dan nilai siswa</p>
+                </div>
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Cari nama siswa..."
+                    >
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Siswa</th>
+                            <th>Kelas</th>
+                            <th>Nilai</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelSiswa">
+                        <!-- data dari javascript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <p>Menampilkan <span id="footerJumlah">10</span> siswa</p>
+
+        </section>
+
+        <footer>
+            © 2026 StudentHub. Student Dashboard.
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
